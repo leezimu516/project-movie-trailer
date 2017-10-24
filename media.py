@@ -1,3 +1,6 @@
+"""this Movie class used to initialize the movie's info,
+   and open broswer to play movie trailers
+"""
 import webbrowser
 
 
@@ -7,10 +10,16 @@ class Movie():
                  movie_storyline,
                  poster_image,
                  trailer_youtube):
+        """
+        constructor: to store movie info
+        """
         self.title = movie_title
         self.storyline = movie_storyline
         self.poster_image_url = poster_image
         self.trailer_youtube_url = trailer_youtube
 
     def show_trailer(self):
+        """
+        call this function to open broswer to play movie trailers
+        """
         webbrowser.open(self.trailer_youtube_url)
